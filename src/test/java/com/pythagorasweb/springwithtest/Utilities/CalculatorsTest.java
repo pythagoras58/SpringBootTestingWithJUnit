@@ -18,5 +18,13 @@ class CalculatorsTest {
     @Test
     void getProducts() {
         assertEquals(20, calculators.getProducts(4,5));
+        assertEquals(0, calculators.getProducts(0,0));
+    }
+
+    @Test
+    void getSummation(){
+       assertEquals(40, calculators.getSummation(20,20));
+       assertEquals(18, calculators.getSummation(10,8));
+       assertEquals(0, calculators.getSummation(0,0));
     }
 }

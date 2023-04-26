@@ -17,6 +17,6 @@ class CalculatorsTest {
 
     @Test
     void getProducts() {
-
+        assertEquals(20, calculators.getProducts(4,5));
     }
 }
